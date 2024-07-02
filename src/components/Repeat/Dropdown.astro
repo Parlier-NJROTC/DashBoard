@@ -5,16 +5,6 @@ interface Props {
 
 const {DWName} = Astro.props
 
----
-    <div id="Housing">
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn"> {DWName} </button> <button onclick="myFunction()" class="Arrowbox">
-          <div class="Arrow">V</div>
-        </button>
-        <div id="myDropdown" class="dropdown-content">
-        </div>
-      </div>
-    </div>
 <style>
     #Housing {
       position: absolute;
@@ -142,7 +132,20 @@ const {DWName} = Astro.props
     .show {
       display: block;
     }
-  </style>
+  </style>]
+</head>
+
+<body style="background-color:wheat;">
+
+  <div id="Housing">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">{DWName}</button> <button onclick="myFunction()" class="Arrowbox">
+        <div class="Arrow">V</div>
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+      </div>
+    </div>
+  </div>
   <script lang="JS">
 
     function myFunction() {
